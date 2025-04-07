@@ -89,6 +89,7 @@ import { fetchEmailSuggestions } from '@/services/emailAutocompleteService';
 
 import { WorkspaceLegacyMessage } from '@/components/Workspace/WorkspaceLegacyMessage';
 import { getSharedItems } from '@/services/shareService';
+import { AssistantButton } from '@/components/Assistant/AssistantButton';
 
 const LoadingIcon = styled(Icon3dCubeSphere)`
   color: lightgray;
@@ -1464,6 +1465,9 @@ const Home = ({
                                 )}
                             </div>
 
+                            <div className="fixed bottom-4 right-4 z-50">
+                                <AssistantButton />
+                            </div>
 
                             <TabSidebar
                                 side={"right"}
